@@ -45,16 +45,18 @@ class ViewController: UIViewController {
         return strData
     }
     
+    /**
+        おんどとりWebStorageのWebAPIにアクセスしてみる
+    */
     func accessWebStorage() {
         // アクセスパラメーターを読み込み
         let webStorageDataPath = Bundle.main.path(forResource: self.acces_param_file_name_, ofType: "json")
-        let content = try? Data(contentsOf: URL(fileURLWithPath: webStorageDataPath!))
         
-        guard let _content = content else {
+        guard let content = try? Data(contentsOf: URL(fileURLWithPath: webStorageDataPath!)) else {
             return
         }
         
-        let webStorageInfo = try? JSONSerialization.jsonObject(with: _content, options: [])
+        let webStorageInfo = try? JSONSerialization.jsonObject(with: content, options: [])
         
         guard let _webStorageInfo = webStorageInfo as? [String:Any] else {
             return

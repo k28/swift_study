@@ -72,3 +72,22 @@ print(triangle.perimeter)
 triangle.perimeter = 9.9
 print(triangle.sideLength)
 
+var obj:Shape = triangle
+
+// クラスかどうかの判断はas, as?, as!を使う
+if let t = obj as? EquilateralTriangle {
+    print("t \(t.sideLength) is EquilateralTriangle")
+
+}
+
+obj = testSquare
+// switch caseでも判定できる
+switch obj {
+case let t as EquilateralTriangle:
+    print("t \(t.sideLength) is EquilateralTriangle")
+case let t as Square:
+    print("t \(t.sideLength) is Square")
+default:
+    print("unknown")
+}
+

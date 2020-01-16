@@ -15,6 +15,11 @@ for (item) in fruitslist {
     print(item)
 }
 
+// 順番に並んだ配列を作成
+let sequencelist = [Int](0..<5)
+for i in sequencelist {
+    print(i)
+}
 
 // 辞書の初期化
 var occupations = [

@@ -13,6 +13,10 @@
 		1E681DCA23FF4F7900075763 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E681DC923FF4F7900075763 /* Assets.xcassets */; };
 		1E681DCD23FF4F7900075763 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E681DCC23FF4F7900075763 /* Preview Assets.xcassets */; };
 		1E681DD023FF4F7900075763 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E681DCE23FF4F7900075763 /* LaunchScreen.storyboard */; };
+		1E681DDF23FF806A00075763 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E681DDE23FF806A00075763 /* ToDo.swift */; };
+		1E681DE123FF80EF00075763 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E681DE023FF80EF00075763 /* ListView.swift */; };
+		1E681DE323FF822E00075763 /* TodoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E681DE223FF822E00075763 /* TodoCard.swift */; };
+		1E681DE523FF897500075763 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E681DE423FF897500075763 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		1E681DCC23FF4F7900075763 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1E681DCF23FF4F7900075763 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E681DD123FF4F7900075763 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E681DDE23FF806A00075763 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		1E681DE023FF80EF00075763 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		1E681DE223FF822E00075763 /* TodoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCard.swift; sourceTree = "<group>"; };
+		1E681DE423FF897500075763 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,10 @@
 				1E681DC323FF4F7800075763 /* AppDelegate.swift */,
 				1E681DC523FF4F7800075763 /* SceneDelegate.swift */,
 				1E681DC723FF4F7800075763 /* ContentView.swift */,
+				1E681DDE23FF806A00075763 /* ToDo.swift */,
+				1E681DE023FF80EF00075763 /* ListView.swift */,
+				1E681DE223FF822E00075763 /* TodoCard.swift */,
+				1E681DE423FF897500075763 /* DetailView.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -156,7 +168,11 @@
 			files = (
 				1E681DC423FF4F7800075763 /* AppDelegate.swift in Sources */,
 				1E681DC623FF4F7800075763 /* SceneDelegate.swift in Sources */,
+				1E681DE123FF80EF00075763 /* ListView.swift in Sources */,
+				1E681DE523FF897500075763 /* DetailView.swift in Sources */,
+				1E681DE323FF822E00075763 /* TodoCard.swift in Sources */,
 				1E681DC823FF4F7800075763 /* ContentView.swift in Sources */,
+				1E681DDF23FF806A00075763 /* ToDo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

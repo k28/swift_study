@@ -10,8 +10,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        // Text("Hello, World!")
-        ListView()
+        NavigationView{
+            ListView()
+            .environmentObject(TodoData())  // ListViewにTodoDataを与える
+        }
     }
 }
 

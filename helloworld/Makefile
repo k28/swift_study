@@ -2,7 +2,7 @@
 TARGET	= "helloworld"
 
 build:
-	swiftc -o $(TARGET) helloworld.swift
+	swiftc -o $(TARGET) main.swift
 
 all: build
 

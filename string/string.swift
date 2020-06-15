@@ -1,3 +1,4 @@
+import Foundation
 
 // 特定の文字の場所で分割した部分文字列を取得する
 let word = "123e456"
@@ -13,4 +14,6 @@ if let pos = word.firstIndex(of: "e") {
 // 文字で分割する
 _ = word.split(separator: "e")  // ["123", "456"]
 
+// 改行文字で分割する
+var result = "Hello\r\nWorld\r".split(whereSeparator: \.isNewline)  // ["Hello", "World"]
 

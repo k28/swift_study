@@ -14,6 +14,9 @@ if let pos = word.firstIndex(of: "e") {
 // 文字で分割する
 _ = word.split(separator: "e")  // ["123", "456"]
 
-// 改行文字で分割する
+// 改行文字で分割する Swift5.2以降
 var result = "Hello\r\nWorld\r".split(whereSeparator: \.isNewline)  // ["Hello", "World"]
+
+// 最後の文字を取得する
+_ = word.last!   // Charactorが取得できる, StringにするにはString()で囲む
 

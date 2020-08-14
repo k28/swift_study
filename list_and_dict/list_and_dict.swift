@@ -4,6 +4,9 @@ var emptydict = [String:String]()
 print(emptylist)
 print(emptydict)
 
+// 同じ内容で数を指定して初期化
+var dp = [Bool](repeating: true, count:3)
+
 // 配列の初期化と追加
 var fruitslist = ["apple", "orange", "melon"]
 print(fruitslist)

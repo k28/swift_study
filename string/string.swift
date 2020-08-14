@@ -20,3 +20,15 @@ var result = "Hello\r\nWorld\r".split(whereSeparator: \.isNewline)  // ["Hello",
 // 最後の文字を取得する
 _ = word.last!   // Charactorが取得できる, StringにするにはString()で囲む
 
+// Swift 5.0からの新機能
+// ##で囲むとrawStringになる => "をエスケープしなくて良い
+repeat {
+    let someNumber = 123
+    let rawStr = #"Hello "New" World! \#(someNumber)"#
+    print(rawStr)
+
+    // ##"hoge#hoge"## のように##で始めると#も文字列中で使える
+    let rawStr2 = ##"Use # inside """##
+    print(rawStr2)
+} while (false)
+

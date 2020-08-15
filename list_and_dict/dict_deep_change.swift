@@ -15,6 +15,11 @@ func changeDeepHash(_ dict: inout DeepHash) {
         }
         dict["Apple"] = apple
     }
+
+    // 追加したい場所が決まっているなら以下の方法でもValueをアップデートできる
+    // if dict["Apple"]?["count"] != nil {
+    //     dict["Apple"]!["count"]!.append("300")
+    // }
 }
 
 let original: DeepHash = [

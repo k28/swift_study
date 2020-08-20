@@ -8,13 +8,13 @@ func changeDeepHash(_ dict: inout DeepHash) {
     // Apple のcountを["100", "200", "300"]に変えたい
 
     // 上から順に更新したものでアップデートしていく
-    if var apple = dict["Apple"] {
-        if var count = apple["count"] {
-            count.append("300")
-            apple["count"] = count
-        }
-        dict["Apple"] = apple
-    }
+    // if var apple = dict["Apple"] {
+    //     if var count = apple["count"] {
+    //         count.append("300")
+    //         apple["count"] = count
+    //     }
+    //     dict["Apple"] = apple
+    // }
 
     // 追加したい場所が決まっているなら以下の方法でもValueをアップデートできる
     // if dict["Apple"]?["count"] != nil {

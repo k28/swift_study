@@ -24,6 +24,10 @@ for i in sequencelist {
     print(i)
 }
 
+// Int配列の内容の和を計算
+let total = sequencelist.reduce(0, +)
+print("total is \(total).")
+
 // 辞書の初期化
 var occupations = [
     "Malcolm" : "Captain",

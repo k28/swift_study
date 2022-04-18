@@ -17,6 +17,7 @@ Swiftのお勉強用リポジトリ
 | object_and_classes            | クラス定義の仕方                  |
 | protocols_and_extensions      | プロトコルの定義と拡張(extension) |
 | thread_sample                 | スレッドの使い方                  |
+| async_await                   | AsyncAwaitの使い方                |
 | worker_thread_sample          | 工事中...                         |
 
 
